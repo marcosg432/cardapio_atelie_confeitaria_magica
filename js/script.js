@@ -1,5 +1,5 @@
 /**
- * Senna Doce - Cardápio Digital
+ * Cozinha Mágica - Cardápio Digital
  * Script principal - animações e funcionalidades
  */
 

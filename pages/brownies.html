@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavês | Cozinha Mágica</title>
+    <title>Brownies | Cozinha Mágica</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="../brownie-ninho-embalado-2.webp" as="image">
 </head>
 <body>
     <button type="button" class="scroll-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
@@ -18,7 +19,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
         <span class="carrinho-badge" style="display: none;">0</span>
     </button>
-    <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20card%C3%A1pio%20e%20gostaria%20de%20fazer%20um%20pedido." 
+    <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20card%C3%A1pio%20e%20gostaria%20de%20fazer%20um%20pedido."
        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fazer pedido no WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         <span>Pedir</span>
@@ -54,76 +55,119 @@
     </header>
 
     <section class="page-hero">
-        <h1>Pavês</h1>
-        <p>Pavês em camadas, cremosos e irresistíveis. Peça pelo WhatsApp e retire ou receba em casa.</p>
+        <h1>Brownies</h1>
+        <p>Toda a linha de brownie em um só lugar: no pote, tradicional, marmita, trufado, pizza e sandubão.</p>
     </section>
 
     <main class="container">
-        <div class="produtos-grid">
-            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" data-produto-nome="Pavê de morango" data-produto-preco="45" data-produto-descricao="Camadas de creme, biscoito e morangos frescos. Clássico e refrescante." data-produto-ingredientes="Massa branca | Morangos frescos | Chantilly" data-produto-pedido="A partir de R$ 45,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20de%20morango.">
-                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80');"></div>
+        <div class="cardapio-intro">
+            <p>Navegue pelas seções: pote, tradicional, marmita, trufado, pizza e sandubão — cada linha com os sabores e formatos da casa.</p>
+        </div>
+
+        <div class="produtos-grid produtos-grid--com-grupos">
+            <h2 class="cardapio-grupo-titulo">Brownie no pote</h2>
+            <article class="produto-card" data-produto-imagem="../brownie-ninho-embalado-2.webp" data-produto-nome="Brownie no pote (220ml)" data-produto-preco="18" data-produto-descricao="Brownie em camadas no pote 220ml, com ganache e finalização da casa." data-produto-ingredientes="Chocolate | Farinha | Ovos | Manteiga" data-produto-pedido="A partir de R$ 18,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20brownie%20no%20pote%20220ml.">
+                <div class="produto-img" style="background-image: url('../brownie-ninho-embalado-2.webp');"></div>
                 <div class="produto-content">
-                    <h3>Pavê de morango</h3>
+                    <h3>Brownie no pote (220ml)</h3>
                     <div class="produto-buttons">
                         <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
                         <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20de%20morango." class="produto-whatsapp" target="_blank">
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20brownie%20no%20pote%20220ml." class="produto-whatsapp" target="_blank">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         Pedir no WhatsApp
                         </a>
                     </div>
                 </div>
             </article>
-            <article class="produto-card" data-produto-imagem="../assets/images/bolos/bolo-pave-chocolate.webp" data-produto-nome="Pavê de chocolate" data-produto-preco="42" data-produto-descricao="Camadas de chocolate belga e creme. Intenso e cremoso." data-produto-ingredientes="Chocolate belga | Farinha | Ovos | Manteiga" data-produto-pedido="A partir de R$ 42,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20de%20chocolate.">
-                <div class="produto-img" style="background-image: url('../assets/images/bolos/bolo-pave-chocolate.webp');"></div>
+            <h2 class="cardapio-grupo-titulo">Brownie tradicional</h2>
+            <article class="produto-card" data-produto-imagem="../brownie-ninho-embalado-1.webp" data-produto-nome="Brownie Ninho (80g)" data-produto-preco="14" data-produto-descricao="Brownie com creme de leite ninho, porção individual 80g." data-produto-ingredientes="Chocolate | Leite ninho | Farinha | Ovos" data-produto-pedido="A partir de R$ 14,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20brownie%20ninho%2080g.">
+                <div class="produto-img" style="background-image: url('../brownie-ninho-embalado-1.webp');"></div>
+                <div class="produto-ninho-variacoes" role="group" aria-label="Outras embalagens do Brownie Ninho">
+                    <img src="../brownie-ninho-embalado-3.webp" alt="" width="52" height="52" loading="lazy" decoding="async" />
+                    <img src="../brownie-ninho-embalado-4.webp" alt="" width="52" height="52" loading="lazy" decoding="async" />
+                    <img src="../brownie-ninho-embalado-5.webp" alt="" width="52" height="52" loading="lazy" decoding="async" />
+                </div>
                 <div class="produto-content">
-                    <h3>Pavê de chocolate</h3>
+                    <h3>Brownie Ninho (80g)</h3>
                     <div class="produto-buttons">
                         <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
                         <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20de%20chocolate." class="produto-whatsapp" target="_blank">
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20brownie%20ninho%2080g." class="produto-whatsapp" target="_blank">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         Pedir no WhatsApp
                         </a>
                     </div>
                 </div>
             </article>
-            <article class="produto-card" data-produto-imagem="../assets/images/bolos/bolo-pave-ninho.webp" data-produto-nome="Pavê de ninho" data-produto-preco="44" data-produto-descricao="Camadas de creme de leite ninho e biscoito. Suave e cremoso." data-produto-ingredientes="Leite ninho | Farinha | Ovos" data-produto-pedido="A partir de R$ 44,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20de%20ninho.">
-                <div class="produto-img" style="background-image: url('../assets/images/bolos/bolo-pave-ninho.webp');"></div>
+            <article class="produto-card" data-produto-imagem="../brownie-fatia.webp" data-produto-nome="Fatia de Brownie (250g)" data-produto-preco="22" data-produto-descricao="Fatia generosa de brownie fudgy, 250g — textura intensa e cremosa." data-produto-ingredientes="Chocolate | Farinha | Ovos | Manteiga" data-produto-pedido="A partir de R$ 22,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20fatia%20de%20brownie%20250g.">
+                <div class="produto-img" style="background-image: url('../brownie-fatia.webp');"></div>
                 <div class="produto-content">
-                    <h3>Pavê de ninho</h3>
+                    <h3>Fatia de Brownie (250g)</h3>
                     <div class="produto-buttons">
                         <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
                         <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20de%20ninho." class="produto-whatsapp" target="_blank">
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20fatia%20de%20brownie%20250g." class="produto-whatsapp" target="_blank">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         Pedir no WhatsApp
                         </a>
                     </div>
                 </div>
             </article>
-            <article class="produto-card" data-produto-imagem="../assets/images/bolos/bolo-pave-dois-amores.webp" data-produto-nome="Pavê dois amores" data-produto-preco="48" data-produto-descricao="Chocolate e ninho em camadas. A combinação preferida dos clientes." data-produto-ingredientes="Chocolate | Leite ninho | Chantilly" data-produto-pedido="A partir de R$ 48,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20dois%20amores.">
-                <div class="produto-img" style="background-image: url('../assets/images/bolos/bolo-pave-dois-amores.webp');"></div>
+            <h2 class="cardapio-grupo-titulo">Marmita de brownie</h2>
+            <article class="produto-card" data-produto-imagem="../brownie-pizza.webp" data-produto-nome="Marmita de Brownie" data-produto-preco="28" data-produto-descricao="Marmita com brownie, coberturas e recheios na medida — sabor completo." data-produto-ingredientes="Chocolate | Coberturas | Farinha | Ovos" data-produto-pedido="A partir de R$ 28,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20marmita%20de%20brownie.">
+                <div class="produto-img" style="background-image: url('../brownie-pizza.webp');"></div>
                 <div class="produto-content">
-                    <h3>Pavê dois amores</h3>
+                    <h3>Marmita de Brownie</h3>
                     <div class="produto-buttons">
                         <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
                         <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20dois%20amores." class="produto-whatsapp" target="_blank">
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20marmita%20de%20brownie." class="produto-whatsapp" target="_blank">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         Pedir no WhatsApp
                         </a>
                     </div>
                 </div>
             </article>
-            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&q=80" data-produto-nome="Pavê de brigadeiro" data-produto-preco="46" data-produto-descricao="Camadas de brigadeiro cremoso e biscoito. Para os amantes de chocolate." data-produto-ingredientes="Chocolate | Brigadeiro | Leite condensado" data-produto-pedido="A partir de R$ 46,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20de%20brigadeiro.">
-                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&q=80');"></div>
+            <h2 class="cardapio-grupo-titulo">Brownie trufado</h2>
+            <article class="produto-card" data-produto-imagem="../brownie-trufado.webp" data-produto-nome="Brownie Trufado" data-produto-preco="24" data-produto-descricao="Brownie com cobertura trufada e finalização com brigadeiros — intenso e cremoso." data-produto-ingredientes="Chocolate | Ganache | Brigadeiro | Farinha" data-produto-pedido="A partir de R$ 24,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20brownie%20trufado.">
+                <div class="produto-img" style="background-image: url('../brownie-trufado.webp');"></div>
                 <div class="produto-content">
-                    <h3>Pavê de brigadeiro</h3>
+                    <h3>Brownie Trufado</h3>
                     <div class="produto-buttons">
                         <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
                         <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20de%20brigadeiro." class="produto-whatsapp" target="_blank">
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20brownie%20trufado." class="produto-whatsapp" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Pedir no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <h2 class="cardapio-grupo-titulo">Pizza de brownie</h2>
+            <article class="produto-card" data-produto-imagem="../brownie-pizza.webp" data-produto-nome="Pizza de Brownie" data-produto-preco="65" data-produto-descricao="Base de brownie em formato de pizza, com coberturas doces — ideal para dividir." data-produto-ingredientes="Chocolate | Coberturas doces | Farinha | Ovos" data-produto-pedido="A partir de R$ 65,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20pizza%20de%20brownie.">
+                <div class="produto-img" style="background-image: url('../brownie-pizza.webp');"></div>
+                <div class="produto-content">
+                    <h3>Pizza de Brownie</h3>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20pizza%20de%20brownie." class="produto-whatsapp" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Pedir no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <h2 class="cardapio-grupo-titulo">Sandubão de brownie</h2>
+            <article class="produto-card" data-produto-imagem="../brownie-sandubao.webp" data-produto-nome="Sandubão de Brownie" data-produto-preco="18" data-produto-descricao="Dois brownies com recheio cremoso no meio — estilo sanduíche doce." data-produto-ingredientes="Chocolate | Recheio cremoso | Farinha | Ovos" data-produto-pedido="A partir de R$ 18,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20sandub%C3%A3o%20de%20brownie.">
+                <div class="produto-img" style="background-image: url('../brownie-sandubao.webp');"></div>
+                <div class="produto-content">
+                    <h3>Sandubão de Brownie</h3>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20sandub%C3%A3o%20de%20brownie." class="produto-whatsapp" target="_blank">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         Pedir no WhatsApp
                         </a>

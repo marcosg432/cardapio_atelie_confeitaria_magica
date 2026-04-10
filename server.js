@@ -1,49 +1,45 @@
 /**
- * Servidor estático - Senna Doce
- * Usa apenas módulos nativos do Node.js (sem dependências)
- * Porta padrão 3008 (ou variável de ambiente PORT) — acessível via IP (sem domínio)
+ * Servidor HTTP estático para produção (Hostinger + PM2).
+ * PORT via env (PM2 ecosystem) — padrão 3012.
  */
 const http = require('http');
-const fs = require('fs');
 const path = require('path');
+const serveHandler = require('serve-handler');
 
-const PORT = parseInt(process.env.PORT, 10) || 3008;
-const MIME_TYPES = {
-  '.html': 'text/html',
-  '.js': 'text/javascript',
-  '.css': 'text/css',
-  '.json': 'application/json',
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-  '.jpeg': 'image/jpeg',
-  '.gif': 'image/gif',
-  '.svg': 'image/svg+xml',
-  '.ico': 'image/x-icon',
-  '.webp': 'image/webp'
-};
+const PORT = parseInt(process.env.PORT || '3012', 10);
+const HOST = process.env.HOST || '0.0.0.0';
+
+const BLOCKED_PREFIXES = ['/node_modules', '/.git'];
+const BLOCKED_FILES = new Set([
+  '/package.json',
+  '/package-lock.json',
+  '/server.js',
+  '/ecosystem.config.cjs',
+]);
+
+function isBlocked(urlPath) {
+  const p = urlPath.split('?')[0];
+  if (BLOCKED_FILES.has(p)) return true;
+  for (const prefix of BLOCKED_PREFIXES) {
+    if (p === prefix || p.startsWith(prefix + '/')) return true;
+  }
+  return false;
+}
 
 const server = http.createServer((req, res) => {
-  let filePath = '.' + (req.url === '/' || req.url === '' ? '/index.html' : req.url);
-  filePath = path.normalize(filePath).replace(/^(\.\.(\/|\\|$))+/, '');
-
-  fs.readFile(filePath, (err, content) => {
-    if (err) {
-      if (err.code === 'ENOENT') {
-        res.writeHead(404);
-        res.end('Arquivo não encontrado');
-      } else {
-        res.writeHead(500);
-        res.end('Erro do servidor');
-      }
-      return;
-    }
-    const ext = path.extname(filePath);
-    const contentType = MIME_TYPES[ext] || 'application/octet-stream';
-    res.writeHead(200, { 'Content-Type': contentType });
-    res.end(content);
+  const urlPath = req.url || '/';
+  if (isBlocked(urlPath)) {
+    res.statusCode = 404;
+    res.end('Not Found');
+    return;
+  }
+  return serveHandler(req, res, {
+    public: path.join(__dirname),
+    cleanUrls: false,
+    etag: true,
   });
 });
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Senna Doce: http://0.0.0.0:${PORT}`);
+server.listen(PORT, HOST, () => {
+  console.log(`[cardapio] http://${HOST}:${PORT}`);
 });

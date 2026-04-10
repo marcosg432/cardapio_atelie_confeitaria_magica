@@ -1,22 +1,24 @@
 /**
- * PM2 - cardapio_apresentativo
- * Porta 3008 (livre no servidor além de 3000–3007, 22, 80, 443)
- * Sem domínio: http://SEU_IP:3008
+ * PM2 — produção Hostinger
+ * Uso: pm2 start ecosystem.config.cjs
+ *      pm2 save && pm2 startup
  */
 module.exports = {
   apps: [
     {
-      name: 'cardapio_apresentativo',
-      script: 'server.js',
+      name: 'cardapio-atelie-confeitaria-magica',
+      script: './server.js',
       cwd: __dirname,
       instances: 1,
+      exec_mode: 'fork',
       autorestart: true,
       watch: false,
-      max_memory_restart: '150M',
+      max_memory_restart: '200M',
       env: {
         NODE_ENV: 'production',
-        PORT: '3008'
-      }
-    }
-  ]
+        PORT: 3012,
+        HOST: '0.0.0.0',
+      },
+    },
+  ],
 };

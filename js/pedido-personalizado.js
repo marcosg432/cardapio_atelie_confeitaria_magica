@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let msg = 'PEDIDO PERSONALIZADO\n\n';
         msg += `Tipo de produto: ${tipoProduto}\n`;
-        msg += `Massa: ${massa || '-'}\n`;
-        msg += `Recheio: ${recheio || '-'}\n`;
+        msg += `Base / massa: ${massa || '-'}\n`;
+        msg += `Recheio / sabor: ${recheio || '-'}\n`;
         msg += `Cobertura: ${cobertura || '-'}\n`;
         msg += `Tamanho: ${tamanho || '-'}\n`;
-        msg += `Tema: ${tema || '-'}\n`;
-        msg += `Nome no bolo: ${nomeBolo || '-'}\n`;
+        msg += `Tema / ocasião: ${tema || '-'}\n`;
+        msg += `Texto personalizado (etiqueta ou mensagem): ${nomeBolo || '-'}\n`;
         msg += `Quantidade: ${quantidade || '-'}\n\n`;
         msg += `Observações: ${observacoes || '-'}\n\n`;
         msg += `Nome do cliente: ${nomeCliente}\n`;

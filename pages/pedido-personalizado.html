@@ -3,71 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedido Personalizado | Senna Doce</title>
+    <title>Sobremesas e Taças | Cozinha Mágica</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        .form-pedido-personalizado {
-            max-width: 560px;
-            margin: 0 auto 3rem;
-            padding: 2rem;
-            background: var(--branco);
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(92, 64, 51, 0.1);
-        }
-        .form-pedido-personalizado h3 {
-            font-family: var(--fonte-titulo);
-            color: var(--marrom);
-            margin-bottom: 1.25rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--bege-escuro);
-        }
-        .form-pedido-personalizado label {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--marrom);
-            margin-bottom: 0.4rem;
-        }
-        .form-pedido-personalizado input,
-        .form-pedido-personalizado select,
-        .form-pedido-personalizado textarea {
-            width: 100%;
-            padding: 0.65rem 0.85rem;
-            border: 1px solid var(--bege-escuro);
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-family: inherit;
-            margin-bottom: 1.25rem;
-            box-sizing: border-box;
-        }
-        .form-pedido-personalizado textarea {
-            min-height: 80px;
-            resize: vertical;
-        }
-        .form-pedido-personalizado .btn-enviar {
-            width: 100%;
-            padding: 1rem 1.5rem;
-            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin-top: 0.5rem;
-        }
-        .form-pedido-personalizado .btn-enviar:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-        }
-    </style>
 </head>
-<body>
+<body class="page-sobremesas-tacas">
     <button type="button" class="scroll-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
     </button>
@@ -75,7 +18,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
         <span class="carrinho-badge" style="display: none;">0</span>
     </button>
-    <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20card%C3%A1pio%20e%20gostaria%20de%20fazer%20um%20pedido%20personalizado." 
+    <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20card%C3%A1pio%20de%20Sobremesas%20e%20Ta%C3%A7as%20e%20gostaria%20de%20fazer%20um%20pedido."
        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Pedir no WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         <span>Pedir</span>
@@ -83,7 +26,9 @@
 
     <header class="header">
         <nav class="nav container">
-            <a href="../index.html" class="logo">Senna Doce</a>
+            <a href="../index.html" class="logo" aria-label="Cozinha Mágica — Padaria e Confeitaria">
+                <img src="../assets/logo/cozinha-magica-logo.png" alt="" class="logo-img" width="280" height="280" decoding="async" />
+            </a>
             <button class="nav-toggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
@@ -92,69 +37,216 @@
                 <li class="nav-dropdown">
                     <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Cardápio</button>
                     <ul class="nav-dropdown-menu" role="menu">
-                        <li><a href="bolos-vitrine.html">Bolos da vitrine</a></li>
-                        <li><a href="doces-finos.html">Doces finos</a></li>
-                        <li><a href="doces-festas.html">Doces para festas</a></li>
-                        <li><a href="sobremesas-tortas.html">Sobremesas e tortas</a></li>
-                        <li><a href="bolos-personalizados.html">Bolos personalizados</a></li>
-                        <li><a href="salgados.html">Salgados</a></li>
+                        <li><a href="doces-festas.html">Copos da Felicidade</a></li>
+                        <li><a href="sobremesas-tortas.html">Sobremesas</a></li>
+                        <li><a href="bolos-vitrine.html">Pavês</a></li>
+                        <li><a href="brownies.html">Brownies</a></li>
+                        <li><a href="bolos-personalizados.html">Especiais</a></li>
+                        <li><a href="doces-finos.html">Doces</a></li>
+                        <li><a href="salgados.html">Coxinhas</a></li>
                     </ul>
                 </li>
-                <li><a href="pedido-personalizado.html">Pedido Personalizado</a></li>
+                <li><a href="bolos.html">Bolos</a></li>
+                <li><a href="pedido-personalizado.html" class="nav-link-ativo" aria-current="page">Sobremesas e Taças</a></li>
                 <li><a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20card%C3%A1pio%20e%20gostaria%20de%20fazer%20um%20pedido." class="nav-whatsapp" target="_blank">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="page-hero">
-        <h1>Pedido Personalizado</h1>
-        <p>Monte seu bolo, kit festa ou doces personalizados e envie diretamente para o WhatsApp.</p>
+    <section class="page-hero page-hero--vitrine-premium">
+        <p class="page-hero__eyebrow">Cozinha Mágica · Cardápio</p>
+        <h1>Sobremesas e Taças</h1>
+        <p class="page-hero__lead">Taças montadas na medida e sobremesas generosas para compartilhar — texturas cremosas, frutas e chocolate em cada detalhe.</p>
     </section>
 
-    <main class="container">
+    <main class="container main-app-vitrine">
+        <div class="cardapio-intro cardapio-intro--vitrine">
+            <p>Escolha seus favoritos, adicione ao carrinho ou peça direto pelo WhatsApp. Valores podem variar conforme a temporada — consulte disponibilidade.</p>
+        </div>
+
+        <div class="produtos-grid produtos-grid--com-grupos vitrine-produtos">
+            <h2 class="cardapio-grupo-titulo">Taças</h2>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1586985289688-ca3cf47d3d5e?w=600&q=80" data-produto-nome="Taça Red Velvet" data-produto-preco="32" data-produto-descricao="Camadas de bolo red velvet, cream cheese e finalização elegante na taça. Porção individual." data-produto-ingredientes="Red velvet | Cream cheese | Cobertura" data-produto-pedido="A partir de R$ 32,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Red%20Velvet.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1586985289688-ca3cf47d3d5e?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Taça Red Velvet</h3>
+                    <p class="produto-resumo">Massa aveludada, creme e acabamento sofisticado.</p>
+                    <span class="produto-preco-tag">A partir de R$ 32,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Red%20Velvet." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1563729784474-4e9957049152?w=600&q=80" data-produto-nome="Taça Geleia de Frutas Amarelas" data-produto-preco="30" data-produto-descricao="Geleia artesanal de frutas amarelas com camadas de creme e biscoito na taça. Refrescante e aromática." data-produto-ingredientes="Frutas amarelas | Creme | Biscoito" data-produto-pedido="A partir de R$ 30,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Geleia%20de%20Frutas%20Amarelas.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1563729784474-4e9957049152?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Geleia de Frutas Amarelas</h3>
+                    <p class="produto-resumo">Notas doces e ácidas em camadas cremosas.</p>
+                    <span class="produto-preco-tag">A partir de R$ 30,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Geleia%20de%20Frutas%20Amarelas." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80" data-produto-nome="Taça Ferrero Rocher" data-produto-preco="36" data-produto-descricao="Chocolate, avelã e camadas crocantes inspiradas no clássico Ferrero. Intenso e cremoso." data-produto-ingredientes="Chocolate | Avelã | Creme | Biscoito" data-produto-pedido="A partir de R$ 36,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Ferrero%20Rocher.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Ferrero Rocher</h3>
+                    <p class="produto-resumo">Chocolate, avelã e textura crocante na medida.</p>
+                    <span class="produto-preco-tag">A partir de R$ 36,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Ferrero%20Rocher." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80" data-produto-nome="Taça Bombom de Uva" data-produto-preco="29" data-produto-descricao="Uvas frescas, creme e toque de chocolate — leve e equilibrada." data-produto-ingredientes="Uva | Creme | Chocolate | Biscoito" data-produto-pedido="A partir de R$ 29,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Bombom%20de%20Uva.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Bombom de Uva</h3>
+                    <p class="produto-resumo">Fruta fresca e creme com finalização de chocolate.</p>
+                    <span class="produto-preco-tag">A partir de R$ 29,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Bombom%20de%20Uva." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1519915212116-7cf65e7e9688?w=600&q=80" data-produto-nome="Taça Folhada" data-produto-preco="31" data-produto-descricao="Folhada crocante intercalada com creme e recheio da casa. Contraste de texturas." data-produto-ingredientes="Massa folhada | Creme | Recheio" data-produto-pedido="A partir de R$ 31,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Folhada.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1519915212116-7cf65e7e9688?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Folhada</h3>
+                    <p class="produto-resumo">Crocância em camadas com creme sedoso.</p>
+                    <span class="produto-preco-tag">A partir de R$ 31,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Folhada." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=600&q=80" data-produto-nome="Taça Brownie" data-produto-preco="28" data-produto-descricao="Brownie em cubos com ganache e creme na taça. Para quem ama chocolate intenso." data-produto-ingredientes="Chocolate | Brownie | Ganache | Creme" data-produto-pedido="A partir de R$ 28,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Brownie.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Brownie</h3>
+                    <p class="produto-resumo">Chocolate intenso, ganache e textura fudgy.</p>
+                    <span class="produto-preco-tag">A partir de R$ 28,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Brownie." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" data-produto-nome="Taça Mousse Desejo" data-produto-preco="27" data-produto-descricao="Mousse aveludado em camadas na taça — versão individual da nossa linha Mousse Desejo." data-produto-ingredientes="Chocolate ou sabor do dia | Creme | Calda" data-produto-pedido="A partir de R$ 27,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Mousse%20Desejo.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Mousse Desejo</h3>
+                    <p class="produto-resumo">Mousse cremosa em porção taça — também em 1L e 2L.</p>
+                    <span class="produto-preco-tag">A partir de R$ 27,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20ta%C3%A7a%20Mousse%20Desejo." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+
+            <h2 class="cardapio-grupo-titulo">Sobremesas</h2>
+            <article class="produto-card" data-produto-imagem="../assets/sobremesas-tortas/cheesecake_frutas_vermelhas.webp" data-produto-nome="Mousse Desejo — 1 litro" data-produto-preco="72" data-produto-descricao="Balde 1L da linha Mousse Desejo — cremosa e generosa para dividir." data-produto-ingredientes="Mousse | Calda | Finalização" data-produto-pedido="1L — a partir de R$ 72,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Mousse%20Desejo%201L.">
+                <div class="produto-img" style="background-image: url('../assets/sobremesas-tortas/cheesecake_frutas_vermelhas.webp');"></div>
+                <div class="produto-content">
+                    <h3>Mousse Desejo — 1L</h3>
+                    <p class="produto-resumo">Formato família, sabor intenso e textura cremosa.</p>
+                    <span class="produto-preco-tag">1L — a partir de R$ 72,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Mousse%20Desejo%201L." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&q=80" data-produto-nome="Mousse Desejo — 2 litros" data-produto-preco="95" data-produto-descricao="Balde 2L — ideal para mesas e celebrações. O mesmo sabor Mousse Desejo em tamanho festivo." data-produto-ingredientes="Mousse | Calda | Finalização" data-produto-pedido="2L — a partir de R$ 95,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Mousse%20Desejo%202L.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Mousse Desejo — 2L</h3>
+                    <p class="produto-resumo">Tamanho festivo para reunir a mesa toda.</p>
+                    <span class="produto-preco-tag">2L — a partir de R$ 95,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Mousse%20Desejo%202L." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+            <article class="produto-card" data-produto-imagem="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" data-produto-nome="Creme de Uvas" data-produto-preco="58" data-produto-descricao="Sobremesa em pote ou travessa com uvas e creme especial da casa — textura leve e refrescante." data-produto-ingredientes="Uvas | Creme | Calda | Biscoito" data-produto-pedido="Porção grande — a partir de R$ 58,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Creme%20de%20Uvas.">
+                <div class="produto-img" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80');"></div>
+                <div class="produto-content">
+                    <h3>Creme de Uvas</h3>
+                    <p class="produto-resumo">Fruta fresca e creme em porção para compartilhar.</p>
+                    <span class="produto-preco-tag">Porção grande — a partir de R$ 58,00</span>
+                    <div class="produto-buttons">
+                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
+                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Creme%20de%20Uvas." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <details class="pedido-form-legacy-wrap">
+            <summary>Pedido personalizado ou item fora da lista? Toque para abrir o formulário</summary>
         <form id="form-pedido-personalizado" class="form-pedido-personalizado">
             <h3>Informações do produto</h3>
             <label for="tipo-produto">Tipo de produto *</label>
             <select id="tipo-produto" required>
                 <option value="">Selecione</option>
-                <option value="Bolo">Bolo</option>
-                <option value="Kit festa">Kit festa</option>
-                <option value="Doces personalizados">Doces personalizados</option>
+                    <option value="Sobremesas e Taças (outros)">Sobremesas e Taças (outros)</option>
+                    <option value="Copos da Felicidade">Copos da Felicidade</option>
+                    <option value="Sobremesas (600g a 2L)">Sobremesas (600g a 2L)</option>
+                    <option value="Pavês">Pavês</option>
+                    <option value="Brownies">Brownies</option>
+                    <option value="Especiais (kits / cestas)">Especiais (kits / cestas)</option>
+                    <option value="Doces (brigadeiros e bombons)">Doces (brigadeiros e bombons)</option>
+                    <option value="Coxinhas doces">Coxinhas doces</option>
             </select>
-            <label for="massa">Massa</label>
-            <input type="text" id="massa" placeholder="Ex: branca, chocolate, red velvet">
-            <label for="recheio">Recheio</label>
+                <label for="massa">Base / massa (se aplicável)</label>
+                <input type="text" id="massa" placeholder="Ex: brownie, biscoito, pote 200ml">
+                <label for="recheio">Recheio / sabor principal</label>
             <input type="text" id="recheio" placeholder="Ex: brigadeiro, ninho, morango">
-            <label for="cobertura">Cobertura</label>
-            <input type="text" id="cobertura" placeholder="Ex: chantilly, ganache, fondant">
-            <label for="tamanho">Tamanho</label>
-            <input type="text" id="tamanho" placeholder="Ex: 1kg, 2kg, mini">
-            <label for="tema">Tema</label>
-            <input type="text" id="tema" placeholder="Ex: aniversário infantil, casamento">
-            <label for="nome-bolo">Nome no bolo</label>
-            <input type="text" id="nome-bolo" placeholder="Ex: Parabéns Maria">
+                <label for="cobertura">Cobertura / finalização</label>
+                <input type="text" id="cobertura" placeholder="Ex: ganache, chantilly, raspas de chocolate">
+                <label for="tamanho">Tamanho ou formato</label>
+                <input type="text" id="tamanho" placeholder="Ex: 600g, 1L, fatia, caixa com 12">
+                <label for="tema">Tema ou ocasião</label>
+                <input type="text" id="tema" placeholder="Ex: aniversário, presente, coffee break">
+                <label for="nome-bolo">Texto na etiqueta ou mensagem (opcional)</label>
+                <input type="text" id="nome-bolo" placeholder="Ex: Parabéns, Feliz dia, nome na caixa">
             <label for="quantidade">Quantidade</label>
             <input type="text" id="quantidade" placeholder="Ex: 1 unidade, 50 doces">
             <label for="observacoes">Observações</label>
             <textarea id="observacoes" placeholder="Detalhes adicionais do seu pedido"></textarea>
-
             <h3>Informações do cliente</h3>
             <label for="nome-cliente">Nome *</label>
             <input type="text" id="nome-cliente" placeholder="Seu nome" required>
             <label for="telefone-cliente">Telefone *</label>
             <input type="tel" id="telefone-cliente" placeholder="(00) 00000-0000" required>
-
-            <button type="submit" class="btn-enviar">
-                Enviar pedido personalizado
-            </button>
+                <button type="submit" class="btn-enviar">Enviar pedido personalizado</button>
         </form>
+        </details>
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>Senna Doce</h3>
+                    <h3>Cozinha Mágica</h3>
                     <p>Doces artesanais feitos com carinho.</p>
                 </div>
                 <div class="footer-links">
@@ -169,12 +261,31 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Senna Doce. Todos os direitos reservados.</p>
+                <p>&copy; 2026 Cozinha Mágica. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Carrinho de Compras -->
+    <div id="produtoModal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-produto" role="dialog" aria-modal="true" aria-labelledby="modalProdutoTitulo">
+            <button type="button" class="modal-close" aria-label="Fechar">&times;</button>
+            <div class="modal-produto-img"></div>
+            <div class="modal-produto-body">
+                <h2 id="modalProdutoTitulo" class="modal-produto-nome"></h2>
+                <p class="modal-produto-descricao"></p>
+                <div class="modal-produto-ingredientes-wrap">
+                    <h4>Ingredientes principais</h4>
+                    <ul class="modal-produto-ingredientes"></ul>
+                </div>
+                <p class="modal-produto-pedido"></p>
+                <a href="#" class="btn btn-whatsapp modal-produto-whatsapp" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Pedir no WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="carrinho-overlay" aria-hidden="true"></div>
     <aside class="carrinho-sidebar">
         <div class="carrinho-header">

@@ -1,13 +1,16 @@
 {
-  "name": "cardapio_apresentativo",
+  "name": "cardapio-atelie-confeitaria-magica",
   "version": "1.0.0",
-  "description": "Senna Doce - Cardápio Digital",
-  "main": "index.html",
+  "private": true,
+  "description": "Cardápio digital estático — Cozinha Mágica",
   "scripts": {
     "start": "node server.js",
-    "build": "echo 'Projeto estático - sem build'"
+    "serve": "node server.js"
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "serve-handler": "^6.1.5"
   }
 }
