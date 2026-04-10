@@ -35,7 +35,9 @@ const server = http.createServer((req, res) => {
   }
   return serveHandler(req, res, {
     public: path.join(__dirname),
-    cleanUrls: false,
+    // Obrigatório para servir /index.html em GET / (com false, vira listagem de pasta)
+    cleanUrls: true,
+    directoryListing: false,
     etag: true,
   });
 });
