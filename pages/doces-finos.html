@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doces | Cozinha Mágica</title>
+    <title>Bombom | Cozinha Mágica</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,14 +37,23 @@
                     <ul class="nav-dropdown-menu" role="menu">
                         <li><a href="doces-festas.html">Copos da Felicidade</a></li>
                         <li><a href="sobremesas-tortas.html">Sobremesas</a></li>
+                        <li><a href="pudim.html">Pudim</a></li>
                         <li><a href="bolos-vitrine.html">Pavês</a></li>
                         <li><a href="brownies.html">Brownies</a></li>
                         <li><a href="bolos-personalizados.html">Especiais</a></li>
-                        <li><a href="doces-finos.html">Doces</a></li>
+                        <li><a href="doces-finos.html">Bombom</a></li>
                         <li><a href="salgados.html">Coxinhas</a></li>
                     </ul>
                 </li>
-                <li><a href="bolos.html">Bolos</a></li>
+                <li class="nav-dropdown">
+                    <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Bolos</button>
+                    <ul class="nav-dropdown-menu" role="menu">
+                        <li><a href="bolo-vulcao.html">Bolo Vulcão</a></li>
+                        <li><a href="bolo-no-pote.html">Bolo no Pote</a></li>
+                        <li><a href="fatia-de-bolo.html">Fatia de bolo</a></li>
+                    </ul>
+                </li>
+                <li><a href="combos.html">Combos</a></li>
                 <li><a href="pedido-personalizado.html">Sobremesas e Taças</a></li>
                 <li><a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20card%C3%A1pio%20e%20gostaria%20de%20fazer%20um%20pedido." class="nav-whatsapp" target="_blank">Contato</a></li>
             </ul>
@@ -52,7 +61,7 @@
     </header>
 
     <section class="page-hero">
-        <h1>Doces</h1>
+        <h1>Bombom</h1>
         <p>Brigadeiros e bombons artesanais, feitos com ingredientes de qualidade.</p>
     </section>
 
@@ -62,69 +71,31 @@
         </div>
 
         <div class="doces-grid produtos-grid">
-            <article class="produto-card" data-produto-imagem="../assets/doces-finos/brigadeiro_gourmet.webp" data-produto-nome="Brigadeiro gourmet" data-produto-preco="35" data-produto-descricao="Chocolate belga de alta qualidade, feito à mão. Cada unidade é uma explosão de sabor. Perfeito para festas elegantes e presentes especiais." data-produto-ingredientes="Chocolate belga | Leite condensado | Manteiga | Cacau" data-produto-pedido="Caixa com 20 unidades R$ 35,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20gourmet.">
-                <div class="produto-img" style="background-image: url('../assets/doces-finos/brigadeiro_gourmet.webp');"></div>
+            <article class="produto-card produto-card--carousel" data-produto-imagem="../assets/doces-finos/bombom-morango-80g.jpg" data-produto-nome="Bombom de morango (80g)" data-produto-preco="10" data-produto-descricao="Bombom artesanal de 80g com morango, brigadeiro de ninho e Nutella — combinação cremosa e irresistível." data-produto-ingredientes="Morango | Brigadeiro de ninho | Nutella | Morango" data-produto-pedido="Unidade 80g — R$ 10,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Bombom%20de%20morango%20%2880g%29.">
+                <div class="produto-img produto-img--carousel" aria-roledescription="carrossel">
+                    <div class="produto-carousel-slide active" style="background-image: url('../assets/doces-finos/bombom-morango-80g.jpg');" role="img" aria-label="Bombom de morango 80g"></div>
+                </div>
                 <div class="produto-content">
-                    <h3>Brigadeiro gourmet</h3>
+                    <h3>Bombom de morango (80g)</h3>
+                    <span class="produto-preco-tag">R$ 10,00</span>
                     <div class="produto-buttons">
                         <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
                         <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20gourmet." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Bombom%20de%20morango%20%2880g%29." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
                     </div>
                 </div>
             </article>
-            <article class="produto-card" data-produto-imagem="../assets/doces-finos/brigadeiro_belga.webp" data-produto-nome="Brigadeiro belga" data-produto-preco="38" data-produto-descricao="Feito com chocolate belga importado. Sofisticação e sabor em cada bite. Ideal para casamentos e eventos especiais." data-produto-ingredientes="Chocolate belga | Leite condensado | Manteiga" data-produto-pedido="Caixa com 20 unidades R$ 38,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20belga.">
-                <div class="produto-img" style="background-image: url('../assets/doces-finos/brigadeiro_belga.webp');"></div>
-                <div class="produto-content">
-                    <h3>Brigadeiro belga</h3>
-                    <div class="produto-buttons">
-                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20belga." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
-                    </div>
+            <article class="produto-card produto-card--carousel" data-produto-imagem="../assets/doces-finos/morango-do-amor.jpg" data-produto-nome="Morango do Amor" data-produto-preco="12" data-produto-descricao="Bombom Morango do Amor — combinação cremosa de morango e chocolate, feito com carinho." data-produto-ingredientes="Morango | Chocolate | Creme" data-produto-pedido="R$ 12,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Morango%20do%20Amor.">
+                <div class="produto-img produto-img--carousel" aria-roledescription="carrossel">
+                    <div class="produto-carousel-slide active" style="background-image: url('../assets/doces-finos/morango-do-amor.jpg');" role="img" aria-label="Morango do Amor"></div>
                 </div>
-            </article>
-            <article class="produto-card" data-produto-imagem="../assets/doces-finos/brigadeiro_morango.webp" data-produto-nome="Bombom ao leite" data-produto-preco="42" data-produto-descricao="Bombons com casca de chocolate ao leite e recheios cremosos. Caixa para presente ou degustação." data-produto-ingredientes="Chocolate ao leite | Recheio | Manteiga de cacau" data-produto-pedido="Caixa — consulte valor" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20bombom%20ao%20leite.">
-                <div class="produto-img" style="background-image: url('../assets/doces-finos/brigadeiro_morango.webp');"></div>
                 <div class="produto-content">
-                    <h3>Bombom ao leite</h3>
+                    <h3>Morango do Amor</h3>
+                    <span class="produto-preco-tag">R$ 12,00</span>
                     <div class="produto-buttons">
                         <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
                         <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20bombom%20ao%20leite." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
-                    </div>
-                </div>
-            </article>
-            <article class="produto-card" data-produto-imagem="../assets/doces-finos/brigadeiro_ninho.webp" data-produto-nome="Bombom branco" data-produto-preco="42" data-produto-descricao="Bombons com chocolate branco e recheios como ninho ou frutas. Delicados e elegantes." data-produto-ingredientes="Chocolate branco | Recheio | Leite condensado" data-produto-pedido="Caixa — consulte valor" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20bombom%20branco.">
-                <div class="produto-img" style="background-image: url('../assets/doces-finos/brigadeiro_ninho.webp');"></div>
-                <div class="produto-content">
-                    <h3>Bombom branco</h3>
-                    <div class="produto-buttons">
-                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20bombom%20branco." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
-                    </div>
-                </div>
-            </article>
-            <article class="produto-card" data-produto-imagem="../assets/doces-finos/brigadeiro_ninho.webp" data-produto-nome="Brigadeiro de ninho" data-produto-preco="35" data-produto-descricao="Chocolate e leite ninho numa combinação cremosa. Sabor suave e delicado que agrada todos os paladares." data-produto-ingredientes="Leite ninho | Chocolate branco | Leite condensado" data-produto-pedido="Caixa com 20 unidades R$ 35,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20de%20ninho.">
-                <div class="produto-img" style="background-image: url('../assets/doces-finos/brigadeiro_ninho.webp');"></div>
-                <div class="produto-content">
-                    <h3>Brigadeiro de ninho</h3>
-                    <div class="produto-buttons">
-                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                    <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20de%20ninho." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
-                    </div>
-                </div>
-            </article>
-            <article class="produto-card" data-produto-imagem="../assets/doces-finos/brigadeiro_morango.webp" data-produto-nome="Brigadeiro de morango" data-produto-preco="36" data-produto-descricao="Brigadeiro com toque refrescante de morango. Combinação perfeita de chocolate e fruta. Surpreendente e delicioso." data-produto-ingredientes="Chocolate | Morango | Leite condensado | Manteiga" data-produto-pedido="Caixa com 20 unidades R$ 36,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20de%20morango.">
-                <div class="produto-img" style="background-image: url('../assets/doces-finos/brigadeiro_morango.webp');"></div>
-                <div class="produto-content">
-                    <h3>Brigadeiro de morango</h3>
-                    <div class="produto-buttons">
-                        <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                        <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                    <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20de%20morango." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
+                        <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Morango%20do%20Amor." class="produto-whatsapp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Pedir no WhatsApp</a>
                     </div>
                 </div>
             </article>

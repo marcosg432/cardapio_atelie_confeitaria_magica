@@ -10,12 +10,14 @@
     <link rel="preload" href="assets/images/bolos/bolo-pave-ninho.webp" as="image">
     <link rel="preload" href="assets/images/bolos/bolo-pave-dois-amores.webp" as="image">
     <link rel="preload" href="assets/sobremesas-tortas/sobremesa_ninho_morango.webp" as="image">
-    <link rel="preload" href="assets/sobremesas-tortas/cheesecake_frutas_vermelhas.webp" as="image">
-    <link rel="preload" href="assets/doces-finos/brigadeiro_gourmet.webp" as="image">
+    <link rel="preload" href="assets/doces-finos/bombom-morango-80g.jpg" as="image">
+    <link rel="preload" href="assets/doces-finos/morango-do-amor.jpg" as="image">
     <link rel="preload" href="assets/doces-festas/bandeja_enorme_doces.webp" as="image">
     <link rel="preload" href="assets/salgados/salgados_variados.webp" as="image">
     <link rel="preload" href="assets/salgados/coxinha_tradicional.webp" as="image">
     <link rel="preload" href="assets/salgados/coxinha_costela_catupiry.webp" as="image">
+    <link rel="preload" href="assets/salgados/combo-coxinha-morango.webp" as="image">
+    <link rel="preload" href="assets/pudim/pudim-leite-condensado-01.jpg" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -55,14 +57,23 @@
                     <ul class="nav-dropdown-menu" role="menu">
                         <li><a href="pages/doces-festas.html">Copos da Felicidade</a></li>
                         <li><a href="pages/sobremesas-tortas.html">Sobremesas</a></li>
+                        <li><a href="pages/pudim.html">Pudim</a></li>
                         <li><a href="pages/bolos-vitrine.html">Pavês</a></li>
                         <li><a href="pages/brownies.html">Brownies</a></li>
                         <li><a href="pages/bolos-personalizados.html">Especiais</a></li>
-                        <li><a href="pages/doces-finos.html">Doces</a></li>
+                        <li><a href="pages/doces-finos.html">Bombom</a></li>
                         <li><a href="pages/salgados.html">Coxinhas</a></li>
                     </ul>
                 </li>
-                <li><a href="pages/bolos.html">Bolos</a></li>
+                <li class="nav-dropdown">
+                    <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Bolos</button>
+                    <ul class="nav-dropdown-menu" role="menu">
+                        <li><a href="pages/bolo-vulcao.html">Bolo Vulcão</a></li>
+                        <li><a href="pages/bolo-no-pote.html">Bolo no Pote</a></li>
+                        <li><a href="pages/fatia-de-bolo.html">Fatia de bolo</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/combos.html">Combos</a></li>
                 <li><a href="pages/pedido-personalizado.html">Sobremesas e Taças</a></li>
                 <li><a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20card%C3%A1pio%20e%20gostaria%20de%20fazer%20um%20pedido." class="nav-whatsapp" target="_blank">Contato</a></li>
             </ul>
@@ -85,10 +96,7 @@
                 <div class="hero-slide-bg" style="background-image: url('assets/sobremesas-tortas/sobremesa_ninho_morango.webp');"></div>
             </div>
             <div class="hero-slide">
-                <div class="hero-slide-bg" style="background-image: url('assets/sobremesas-tortas/cheesecake_frutas_vermelhas.webp');"></div>
-            </div>
-            <div class="hero-slide">
-                <div class="hero-slide-bg" style="background-image: url('assets/doces-finos/brigadeiro_gourmet.webp');"></div>
+                <div class="hero-slide-bg" style="background-image: url('assets/doces-finos/bombom-morango-80g.jpg');"></div>
             </div>
             <div class="hero-slide">
                 <div class="hero-slide-bg" style="background-image: url('assets/doces-festas/bandeja_enorme_doces.webp');"></div>
@@ -128,7 +136,7 @@
             <p class="section-subtitle">Explore nosso cardápio completo</p>
             <div class="categoria-grid">
                 <article class="categoria-card">
-                    <div class="categoria-img" style="background-image: url('assets/doces-festas/bandeja_enorme_doces.webp');"></div>
+                    <div class="categoria-img" style="background-image: url('assets/doces-festas/copo-felicidade-ferrero-rocher-01.jpg');"></div>
                     <div class="categoria-content">
                         <h3>Copos da Felicidade</h3>
                         <p>Copos 200ml e variações com camadas cremosas e muito sabor.</p>
@@ -144,6 +152,14 @@
                     </div>
                 </article>
                 <article class="categoria-card">
+                    <div class="categoria-img" style="background-image: url('assets/pudim/pudim-leite-condensado-01.jpg');"></div>
+                    <div class="categoria-content">
+                        <h3>Pudim</h3>
+                        <p>Pudim de leite condensado cremoso — porção individual.</p>
+                        <a href="pages/pudim.html" class="btn btn-secondary">Ver opções</a>
+                    </div>
+                </article>
+                <article class="categoria-card">
                     <div class="categoria-img" style="background-image: url('assets/images/bolos/bolo-pave-dois-amores.webp');"></div>
                     <div class="categoria-content">
                         <h3>Pavês</h3>
@@ -155,28 +171,20 @@
                     <div class="categoria-img" style="background-image: url('assets/images/bolos/brownie-trufado.webp');"></div>
                     <div class="categoria-content">
                         <h3>Brownies</h3>
-                        <p>Toda a linha de brownies em um só lugar: pote, tradicional, marmita, trufado, pizza e sandubão.</p>
+                        <p>Toda a linha de brownies em um só lugar: pote, tradicional, marmita, trufado, sandubão e surpresa de brownie.</p>
                         <a href="pages/brownies.html" class="btn btn-secondary">Ver opções</a>
                     </div>
                 </article>
                 <article class="categoria-card">
-                    <div class="categoria-img" style="background-image: url('assets/bolos-personalizados/categoria_bolos_personalizados.png');"></div>
+                    <div class="categoria-img" style="background-image: url('assets/doces-finos/morango-do-amor.jpg');"></div>
                     <div class="categoria-content">
-                        <h3>Especiais</h3>
-                        <p>Criações diferenciadas e combinações exclusivas da casa.</p>
-                        <a href="pages/bolos-personalizados.html" class="btn btn-secondary">Ver opções</a>
-                    </div>
-                </article>
-                <article class="categoria-card">
-                    <div class="categoria-img" style="background-image: url('assets/doces-finos/categoria_doces_finos.png');"></div>
-                    <div class="categoria-content">
-                        <h3>Doces</h3>
+                        <h3>Bombom</h3>
                         <p>Brigadeiros e bombons artesanais.</p>
                         <a href="pages/doces-finos.html" class="btn btn-secondary">Ver opções</a>
                     </div>
                 </article>
                 <article class="categoria-card">
-                    <div class="categoria-img" style="background-image: url('assets/salgados/coxinha_tradicional.webp');"></div>
+                    <div class="categoria-img" style="background-image: url('assets/salgados/combo-coxinha-morango.webp');"></div>
                     <div class="categoria-content">
                         <h3>Coxinhas</h3>
                         <p>Coxinhas doces com recheios cremosos e massa crocante.</p>
@@ -193,19 +201,6 @@
             <h2 class="section-title">Destaques do cardápio</h2>
             <p class="section-subtitle">Peça direto pelo WhatsApp</p>
             <div class="produtos-grid-home">
-                <article class="produto-card-home" data-produto-imagem="assets/doces-festas/brigadeiro.webp" data-produto-nome="Copo da Felicidade 200ml — chocolate" data-produto-preco="15" data-produto-descricao="Copo 200ml com camadas de creme e chocolate, montado na hora. Porção individual perfeita para matar a vontade." data-produto-ingredientes="Chocolate | Creme | Biscoito | Cobertura" data-produto-pedido="Unidade — consulte valor" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Copo%20da%20Felicidade%20200ml%20chocolate.">
-                    <div class="produto-img-home" style="background-image: url('assets/doces-festas/brigadeiro.webp');"></div>
-                    <div class="produto-content-home">
-                        <h3>Copo da Felicidade 200ml — chocolate</h3>
-                        <p>Camadas cremosas no copo 200ml — sabor chocolate.</p>
-                        <span class="produto-preco">Unidade — consulte valor</span>
-                        <div class="produto-buttons">
-                            <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                            <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                            <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20Copo%20da%20Felicidade%20200ml%20chocolate." class="btn-produto-whatsapp" target="_blank">Pedir no WhatsApp</a>
-                        </div>
-                    </div>
-                </article>
                 <article class="produto-card-home" data-produto-imagem="assets/sobremesas-tortas/sobremesa_ninho_morango.webp" data-produto-nome="Sobremesa 600g — ninho com morango" data-produto-preco="38" data-produto-descricao="Pote 600g com creme de ninho, morangos e camadas cremosas. Ideal para dividir a dois." data-produto-ingredientes="Leite ninho | Morangos | Chantilly | Biscoito" data-produto-pedido="Pote 600g — consulte valor" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20sobremesa%20600g%20ninho%20com%20morango.">
                     <div class="produto-img-home" style="background-image: url('assets/sobremesas-tortas/sobremesa_ninho_morango.webp');"></div>
                     <div class="produto-content-home">
@@ -216,84 +211,6 @@
                             <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
                             <button type="button" class="btn-saiba-mais">Saiba mais</button>
                             <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20sobremesa%20600g%20ninho%20com%20morango." class="btn-produto-whatsapp" target="_blank">Pedir no WhatsApp</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="produto-card-home" data-produto-imagem="assets/images/bolos/bolo-pave-dois-amores.webp" data-produto-preco="48" data-produto-nome="Pavê dois amores" data-produto-descricao="Chocolate e ninho em camadas. A combinação preferida dos clientes, cremosa e irresistível." data-produto-ingredientes="Chocolate | Leite ninho | Chantilly" data-produto-pedido="A partir de R$ 48,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20dois%20amores.">
-                    <div class="produto-img-home" style="background-image: url('assets/images/bolos/bolo-pave-dois-amores.webp');"></div>
-                    <div class="produto-content-home">
-                        <h3>Pavê dois amores</h3>
-                        <p>Camadas de chocolate e ninho — clássico da casa.</p>
-                        <span class="produto-preco">A partir de R$ 48,00</span>
-                        <div class="produto-buttons">
-                            <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                            <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                            <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20pav%C3%AA%20dois%20amores." class="btn-produto-whatsapp" target="_blank">Pedir no WhatsApp</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="produto-card-home" data-produto-imagem="assets/images/bolos/brownie-ninho-embalado-2.webp" data-produto-nome="Brownie no pote — clássico" data-produto-preco="18" data-produto-descricao="Brownie em camadas no pote, com ganache e finalização da casa." data-produto-ingredientes="Chocolate | Farinha | Ovos | Manteiga" data-produto-pedido="A partir de R$ 18,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20brownie%20no%20pote%20cl%C3%A1ssico.">
-                    <div class="produto-img-home" style="background-image: url('assets/images/bolos/brownie-ninho-embalado-2.webp');"></div>
-                    <div class="produto-content-home">
-                        <h3>Brownie no pote — clássico</h3>
-                        <p>Toda a linha de brownie também na página Brownies.</p>
-                        <span class="produto-preco">A partir de R$ 18,00</span>
-                        <div class="produto-buttons">
-                            <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                            <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                            <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20brownie%20no%20pote%20cl%C3%A1ssico." class="btn-produto-whatsapp" target="_blank">Pedir no WhatsApp</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="produto-card-home" data-produto-imagem="assets/bolos-personalizados/categoria_bolos_personalizados.png" data-produto-nome="Kit café da manhã premium" data-produto-preco="85" data-produto-descricao="Linha Especiais: kits, cestas e combinações exclusivas conforme disponibilidade da temporada." data-produto-ingredientes="Doces da casa | Itens selecionados | Montagem especial" data-produto-pedido="Sob consulta — valores variam" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20os%20Especiais%20%28kits%20e%20cestas%29.">
-                    <div class="produto-img-home" style="background-image: url('assets/bolos-personalizados/categoria_bolos_personalizados.png');"></div>
-                    <div class="produto-content-home">
-                        <h3>Kit café da manhã premium</h3>
-                        <p>Especiais da casa — consulte kits e cestas no WhatsApp.</p>
-                        <span class="produto-preco">Sob consulta — valores variam</span>
-                        <div class="produto-buttons">
-                            <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                            <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                            <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20os%20Especiais%20%28kits%20e%20cestas%29." class="btn-produto-whatsapp" target="_blank">Pedir no WhatsApp</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="produto-card-home" data-produto-imagem="assets/doces-finos/brigadeiro_gourmet.webp" data-produto-preco="35" data-produto-nome="Brigadeiro gourmet" data-produto-descricao="Feito com chocolate belga de alta qualidade e preparado à mão. Perfeito para festas e presentes." data-produto-ingredientes="Chocolate belga | Leite condensado | Manteiga | Cacau" data-produto-pedido="Caixa com 20 unidades R$ 35,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20gourmet.">
-                    <div class="produto-img-home" style="background-image: url('assets/doces-finos/brigadeiro_gourmet.webp');"></div>
-                    <div class="produto-content-home">
-                        <h3>Brigadeiro gourmet</h3>
-                        <p>Brigadeiros e bombons artesanais na página Doces.</p>
-                        <span class="produto-preco">Caixa com 20 unidades R$ 35,00</span>
-                        <div class="produto-buttons">
-                            <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                            <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                            <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20brigadeiro%20gourmet." class="btn-produto-whatsapp" target="_blank">Pedir no WhatsApp</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="produto-card-home" data-produto-imagem="assets/images/bolos/brownie-pizza.webp" data-produto-preco="65" data-produto-nome="Pizza de brownie — média" data-produto-descricao="Base de brownie estilo pizza com coberturas doces — também listada na categoria Brownies." data-produto-ingredientes="Chocolate | Coberturas doces | Farinha | Ovos" data-produto-pedido="A partir de R$ 65,00" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20pizza%20de%20brownie%20m%C3%A9dia.">
-                    <div class="produto-img-home" style="background-image: url('assets/images/bolos/brownie-pizza.webp');"></div>
-                    <div class="produto-content-home">
-                        <h3>Pizza de brownie — média</h3>
-                        <p>Brownie em formato de pizza — veja todas as opções em Brownies.</p>
-                        <span class="produto-preco">A partir de R$ 65,00</span>
-                        <div class="produto-buttons">
-                            <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                            <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                            <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20pizza%20de%20brownie%20m%C3%A9dia." class="btn-produto-whatsapp" target="_blank">Pedir no WhatsApp</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="produto-card-home" data-produto-imagem="assets/salgados/coxinha_costela_catupiry.webp" data-produto-preco="8" data-produto-nome="Coxinha doce de brigadeiro" data-produto-descricao="Recheio cremoso de brigadeiro gourmet envolvido em massa crocante doce. A queridinha da casa." data-produto-ingredientes="Massa doce | Brigadeiro | Chocolate" data-produto-pedido="Unidade — consulte valor | caixas especiais" data-produto-whatsapp="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20coxinha%20doce%20de%20brigadeiro.">
-                    <div class="produto-img-home" style="background-image: url('assets/salgados/coxinha_costela_catupiry.webp');"></div>
-                    <div class="produto-content-home">
-                        <h3>Coxinha doce de brigadeiro</h3>
-                        <p>Massa crocante e recheio de brigadeiro — linha Coxinhas.</p>
-                        <span class="produto-preco">Unidade — consulte valor | caixas especiais</span>
-                        <div class="produto-buttons">
-                            <button type="button" class="btn-adicionar-carrinho">Adicionar ao carrinho</button>
-                            <button type="button" class="btn-saiba-mais">Saiba mais</button>
-                            <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20coxinha%20doce%20de%20brigadeiro." class="btn-produto-whatsapp" target="_blank">Pedir no WhatsApp</a>
                         </div>
                     </div>
                 </article>
@@ -308,11 +225,9 @@
             <p class="section-subtitle">Cada detalhe feito com carinho</p>
             <div class="galeria-grid">
                 <div class="galeria-item" style="background-image: url('assets/doces-festas/bandeja_enorme_doces.webp');"></div>
-                <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1563729784474-4e9957049152?w=400&q=80');"></div>
-                <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&q=80');"></div>
-                <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80');"></div>
-                <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1519915212116-7cf65e7e9688?w=400&q=80');"></div>
-                <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80');"></div>
+                <div class="galeria-item" style="background-image: url('assets/doces-festas/copo-felicidade-ferrero-rocher-01.jpg');"></div>
+                <div class="galeria-item" style="background-image: url('assets/sobremesas-tortas/sobremesa_ninho_morango.webp');"></div>
+                <div class="galeria-item" style="background-image: url('assets/pudim/pudim-leite-condensado-01.jpg');"></div>
             </div>
         </div>
     </section>
