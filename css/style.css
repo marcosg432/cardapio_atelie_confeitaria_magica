@@ -2316,6 +2316,26 @@ ul {
     }
 }
 
+/* Copos da Felicidade — só Delícia 2L: área de foto maior */
+.doces-grid .produto-card--delicia-2l .produto-img,
+.doces-grid .produto-card--delicia-2l .produto-img--carousel {
+    height: clamp(600px, 64vw, 780px);
+}
+
+@media (max-width: 768px) {
+    .doces-grid .produto-card--delicia-2l .produto-img,
+    .doces-grid .produto-card--delicia-2l .produto-img--carousel {
+        height: clamp(520px, 85vw, 640px);
+    }
+}
+
+@media (max-width: 480px) {
+    .doces-grid .produto-card--delicia-2l .produto-img,
+    .doces-grid .produto-card--delicia-2l .produto-img--carousel {
+        height: min(96vw, 580px);
+    }
+}
+
 /* Página Combos — foto do card maior que o grid padrão .doces-grid */
 .page-combos .doces-grid .produto-card .produto-img,
 .page-combos .doces-grid .produto-card .produto-img--carousel {
