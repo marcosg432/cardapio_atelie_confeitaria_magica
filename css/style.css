@@ -783,6 +783,84 @@ ul {
     }
 }
 
+/* Home — Combos: uma única carta centralizada (fora do menu) */
+.combos-section {
+    background: linear-gradient(180deg, #ffffff 0%, rgba(248, 200, 220, 0.1) 48%, #ffffff 100%);
+}
+
+.categoria-grid.categoria-grid--single {
+    width: 100%;
+    max-width: min(100%, 28rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoria-grid.categoria-grid--single .categoria-card {
+    width: 100%;
+    min-width: 0;
+}
+
+.combos-section .categoria-img {
+    height: clamp(280px, 52vw, 380px);
+}
+
+@media (min-width: 769px) {
+    .combos-section .categoria-img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 481px) {
+    .categoria-grid.categoria-grid--single {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) {
+    .categoria-grid.categoria-grid--single {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 993px) {
+    .categoria-grid.categoria-grid--single {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Um único card: não usar colunas 2–4 do .doces-grid/.produtos-grid */
+.produtos-grid.produtos-grid--solo {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: min(100%, 36rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 481px) {
+    .produtos-grid.produtos-grid--solo {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) {
+    .produtos-grid.produtos-grid--solo {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 993px) {
+    .produtos-grid.produtos-grid--solo {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1201px) {
+    .produtos-grid.produtos-grid--solo {
+        grid-template-columns: 1fr;
+    }
+}
+
 .categoria-card {
     background: var(--branco);
     border-radius: var(--radius-lg);
@@ -892,6 +970,44 @@ ul {
 
 .produto-card-home:hover .produto-img-home {
     transform: scale(1.02);
+}
+
+/* Card único com carrossel de imagens (Delícia 1L) */
+.produto-img-home--carousel {
+    position: relative;
+    overflow: hidden;
+    transform: none !important;
+}
+
+.produto-card-home--carousel:hover .produto-img-home--carousel {
+    transform: none !important;
+}
+
+.produto-carousel-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.65s ease;
+    pointer-events: none;
+}
+
+.produto-carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Mesmo carrossel em páginas de cardápio (.produto-card) */
+.produto-img--carousel {
+    position: relative;
+    overflow: hidden;
+    transform: none !important;
+}
+
+.produto-card--carousel:hover .produto-img--carousel {
+    transform: none !important;
 }
 
 .produto-content-home {
@@ -1413,6 +1529,18 @@ ul {
     margin-bottom: 0.35rem;
 }
 
+.produto-preco-tag--segundo {
+    margin-top: 0.65rem;
+}
+
+.produto-porcoes-tag {
+    margin: 0 0 0.85rem;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: var(--texto-suave);
+    letter-spacing: 0.02em;
+}
+
 .page-sobremesas-tacas .vitrine-produtos .produto-preco-tag {
     font-family: var(--fonte-texto);
     font-size: 1.125rem;
@@ -1579,6 +1707,11 @@ ul {
     font-weight: 600;
 }
 
+.nav-menu .nav-dropdown-trigger.nav-link-ativo {
+    color: var(--cor-rosa-profundo);
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
     .cardapio-intro {
         padding: 2rem 1rem;
@@ -1689,29 +1822,20 @@ ul {
     transition: transform var(--transicao);
 }
 
+/* Card específico com foto maior (ex.: Marmita de Brownie) */
+.produto-card--imagem-alta .produto-img {
+    height: min(340px, 52vw);
+    min-height: 280px;
+}
+
+@media (min-width: 768px) {
+    .produto-card--imagem-alta .produto-img {
+        height: 340px;
+    }
+}
+
 .produto-card:hover .produto-img {
     transform: scale(1.02);
-}
-
-/* Variações de embalagem — Brownie Ninho (miniaturas abaixo da foto principal) */
-.produto-ninho-variacoes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 0.75rem 0.35rem;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, var(--branco) 100%);
-    border-bottom: 1px solid rgba(235, 230, 232, 0.9);
-}
-
-.produto-ninho-variacoes img {
-    width: 3.25rem;
-    height: 3.25rem;
-    object-fit: cover;
-    border-radius: var(--radius-sm);
-    border: 1px solid rgba(235, 230, 232, 0.95);
-    box-shadow: 0 1px 3px rgba(92, 64, 51, 0.08);
 }
 
 .produto-content {
@@ -1726,6 +1850,13 @@ ul {
     margin-bottom: 0.55rem;
     letter-spacing: 0.03em;
     line-height: 1.3;
+}
+
+.produto-content .produto-sabor-linha {
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+    margin: 0 0 0.35rem;
+    line-height: 1.4;
 }
 
 .produto-whatsapp {
@@ -2137,19 +2268,71 @@ ul {
     }
 }
 
-.doces-grid .produto-card .produto-img {
-    height: 180px;
+/* Página Combos (1 card): .doces-grid multi-col fica depois no ficheiro e partia a largura */
+.doces-grid.produtos-grid.produtos-grid--solo {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    max-width: min(100%, 36rem) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Copos da Felicidade — mesma configuração de foto para todos (altura Delícia, cover, sem zoom no hover) */
+.doces-grid .produto-card .produto-img,
+.doces-grid .produto-card .produto-img--carousel {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    overflow: hidden;
+    transform: none !important;
+}
+
+.doces-grid .produto-card:hover .produto-img,
+.doces-grid .produto-card:hover .produto-img--carousel,
+.doces-grid .produto-card--carousel:hover .produto-img--carousel {
+    transform: none !important;
+}
+
+.doces-grid .produto-card .produto-carousel-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
-    .doces-grid .produto-card .produto-img {
-        height: 160px;
+    .doces-grid .produto-card .produto-img,
+    .doces-grid .produto-card .produto-img--carousel {
+        height: 280px;
     }
 }
 
 @media (max-width: 480px) {
-    .doces-grid .produto-card .produto-img {
-        height: 150px;
+    .doces-grid .produto-card .produto-img,
+    .doces-grid .produto-card .produto-img--carousel {
+        height: 260px;
+    }
+}
+
+/* Página Combos — foto do card maior que o grid padrão .doces-grid */
+.page-combos .doces-grid .produto-card .produto-img,
+.page-combos .doces-grid .produto-card .produto-img--carousel {
+    height: clamp(320px, 58vw, 520px);
+}
+
+@media (max-width: 768px) {
+    .page-combos .doces-grid .produto-card .produto-img,
+    .page-combos .doces-grid .produto-card .produto-img--carousel {
+        height: clamp(300px, 72vw, 420px);
+    }
+}
+
+@media (max-width: 480px) {
+    .page-combos .doces-grid .produto-card .produto-img,
+    .page-combos .doces-grid .produto-card .produto-img--carousel {
+        height: min(88vw, 380px);
     }
 }
 
@@ -3339,6 +3522,94 @@ ul {
     margin: 0 auto;
 }
 
+.page-bolos__shell--wide {
+    max-width: 56rem;
+}
+
+.page-bolos__intro {
+    text-align: center;
+    color: rgba(61, 47, 42, 0.78);
+    margin: 0 auto 1.75rem;
+    max-width: 38rem;
+    line-height: 1.65;
+    font-size: 1.02rem;
+}
+
+.page-bolos__intro--sub {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.page-bolos__intro--sub a {
+    color: var(--cor-rosa-profundo);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.page-bolos__intro--sub a:hover {
+    text-decoration: underline;
+}
+
+.page-bolos-hub__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.page-bolos-hub__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(232, 220, 210, 0.85);
+    box-shadow:
+        0 4px 6px rgba(61, 47, 42, 0.05),
+        0 14px 36px rgba(61, 47, 42, 0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.page-bolos-hub__card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 8px 12px rgba(61, 47, 42, 0.07),
+        0 20px 44px rgba(61, 47, 42, 0.11);
+}
+
+.page-bolos-hub__card-img {
+    aspect-ratio: 4 / 3;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-bolos-hub__card-body {
+    padding: 1.25rem 1.35rem 1.55rem;
+    text-align: center;
+}
+
+.page-bolos-hub__card-title {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.2rem, 3.5vw, 1.4rem);
+    font-weight: 600;
+    color: #3d2f2a;
+    margin: 0 0 0.5rem;
+}
+
+.page-bolos-hub__card-desc {
+    font-size: 0.95rem;
+    color: rgba(61, 47, 42, 0.78);
+    line-height: 1.55;
+    margin: 0;
+}
+
+.page-bolos__acoes--solo {
+    max-width: 20rem;
+    margin: 1.5rem auto 0;
+}
+
 .page-bolos__titulo-produto {
     font-family: var(--fonte-titulo);
     font-size: clamp(2rem, 6.5vw, 2.65rem);
@@ -3604,6 +3875,10 @@ ul {
         max-width: 36rem;
     }
 
+    .page-bolos__shell--wide {
+        max-width: 56rem;
+    }
+
     .page-bolos__split {
         gap: 1.15rem;
     }
@@ -3612,6 +3887,10 @@ ul {
 @media (min-width: 769px) {
     .page-bolos__shell {
         max-width: 44rem;
+    }
+
+    .page-bolos__shell--wide {
+        max-width: 56rem;
     }
 
     .page-bolos__split {

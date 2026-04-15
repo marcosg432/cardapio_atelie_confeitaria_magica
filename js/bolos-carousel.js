@@ -2,10 +2,7 @@
  * Carrossel horizontal — desliza para o lado (scroll + avanço automático)
  */
 (function () {
-    function init() {
-        const viewport = document.getElementById('boloCarouselViewport');
-        if (!viewport) return;
-
+    function initViewport(viewport) {
         const slides = viewport.querySelectorAll('.bolo-carousel__slide');
         const n = slides.length;
         if (n < 2) return;
@@ -76,6 +73,10 @@
         }, { passive: true });
 
         start();
+    }
+
+    function init() {
+        document.querySelectorAll('.bolo-carousel__viewport').forEach(initViewport);
     }
 
     if (document.readyState === 'loading') {

@@ -6,6 +6,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Carrossel da hero section
     initHeroCarousel();
+
+    // Carrossel do card Delícia 1L (troca a cada 3s)
+    initProdutoCardCarousel();
     
     // Menu mobile toggle
     initMobileMenu();
@@ -89,14 +92,69 @@ function initHeroCarousel() {
 }
 
 /**
+ * Carrossel em um único card de produto (home)
+ * Fade entre imagens a cada 3s; pausa no hover (como o hero)
+ */
+function initProdutoCardCarousel() {
+    document.querySelectorAll('.produto-img-home--carousel, .produto-img--carousel').forEach((container) => {
+        const slides = container.querySelectorAll('.produto-carousel-slide');
+        if (slides.length < 2) return;
+
+        slides.forEach((slide) => {
+            const bg = slide.getAttribute('style') || '';
+            const match = bg.match(/url\(['"]?([^'")]+)['"]?\)/);
+            if (match) {
+                const img = new Image();
+                img.src = match[1].trim();
+            }
+        });
+
+        let currentIndex = 0;
+        let autoPlayInterval;
+        const INTERVAL_MS = 3000;
+
+        function updateSlides() {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === currentIndex);
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlides();
+        }
+
+        function startAutoPlay() {
+            stopAutoPlay();
+            autoPlayInterval = setInterval(nextSlide, INTERVAL_MS);
+        }
+
+        function stopAutoPlay() {
+            if (autoPlayInterval) {
+                clearInterval(autoPlayInterval);
+                autoPlayInterval = null;
+            }
+        }
+
+        const card = container.closest('.produto-card-home--carousel, .produto-card--carousel');
+        if (card) {
+            card.addEventListener('mouseenter', stopAutoPlay);
+            card.addEventListener('mouseleave', startAutoPlay);
+        }
+
+        updateSlides();
+        startAutoPlay();
+    });
+}
+
+/**
  * Menu mobile - toggle e overlay
  * Dropdown: hover no desktop, clique no mobile
  */
 function initMobileMenu() {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
-    const dropdownTrigger = document.querySelector('.nav-dropdown-trigger');
-    const navDropdown = document.querySelector('.nav-dropdown');
+    const navDropdowns = document.querySelectorAll('.nav-dropdown');
 
     if (!navToggle || !navMenu) return;
 
@@ -104,7 +162,9 @@ function initMobileMenu() {
         navToggle.classList.remove('ativo');
         navMenu.classList.remove('ativo');
         document.body.style.overflow = '';
-        if (navDropdown) navDropdown.classList.remove('expanded');
+        navDropdowns.forEach(function (d) {
+            d.classList.remove('expanded');
+        });
         const overlay = document.querySelector('.nav-overlay');
         if (overlay) overlay.remove();
     }
@@ -114,7 +174,9 @@ function initMobileMenu() {
         navToggle.classList.toggle('ativo');
         navMenu.classList.toggle('ativo');
         document.body.style.overflow = navMenu.classList.contains('ativo') ? 'hidden' : '';
-        if (navDropdown) navDropdown.classList.remove('expanded');
+        navDropdowns.forEach(function (d) {
+            d.classList.remove('expanded');
+        });
 
         if (isOpening && window.innerWidth <= 992) {
             const overlay = document.createElement('div');
@@ -133,16 +195,22 @@ function initMobileMenu() {
         link.addEventListener('click', closeMenu);
     });
 
-    // Dropdown: clique para expandir no mobile
-    if (dropdownTrigger && navDropdown) {
+    // Dropdown: clique para expandir no mobile (Cardápio, Bolos, etc.)
+    navDropdowns.forEach(function (navDropdown) {
+        const dropdownTrigger = navDropdown.querySelector('.nav-dropdown-trigger');
+        if (!dropdownTrigger) return;
         dropdownTrigger.addEventListener('click', function(e) {
             if (window.innerWidth <= 992) {
                 e.preventDefault();
                 e.stopPropagation();
-                navDropdown.classList.toggle('expanded');
+                const isOpen = navDropdown.classList.contains('expanded');
+                navDropdowns.forEach(function (d) {
+                    d.classList.remove('expanded');
+                });
+                if (!isOpen) navDropdown.classList.add('expanded');
             }
         });
-    }
+    });
 }
 
 /**
@@ -265,6 +333,10 @@ function initProdutoModal() {
                 });
             }
             ingredientesWrap.classList.toggle('no-ingredientes', !ingredientesStr.trim());
+            const ingredientesTitulo = ingredientesWrap?.querySelector('h4');
+            if (ingredientesTitulo) {
+                ingredientesTitulo.textContent = card.dataset.produtoIngredientesTitulo || 'Ingredientes principais';
+            }
         }
 
         modal.classList.add('ativo');
